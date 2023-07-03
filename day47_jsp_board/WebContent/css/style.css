@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+pre.cmd {
+	background-color: black;
+	color: white;
+	font-family: Consolas;
+	font-size: 20px;
+	padding: 5px;
+	width: 900px;
+	margin 10px auto;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+table#boardList {
+	border: 2px solid black;
+	border-collapse: collapse;
+	width: 800px;
+	margin: auto;
+}
+table#boardList > thead > tr {
+	background-color: darkgray;
+}
+table#boardList td,
+table#boardList th {
+	padding: 5px 10px;
+	border-bottom: 1px solid gray;
+}
+table#boardList > tbody > tr:hover {
+	cursor: pointer;
+	background-color: #eee;
+}
+table#boardList th:nth-child(2) {
+	widt: 300px;
+}
+table#boardList + div.flex {
+	width: 800px;
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+div.flex {
+	width: 800px;
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-between;
+}
+.frame {
+	width: 800px;
+	margin: auto;
+	box-sizing: border-box;
+}
+.frame > pre {
+	background-color: #eee;
+	width: 700px;
+	font-size: 16px;
+	padding: 10px;
+	word-break: keep-all;
+}
+.search {
+	font-weight: bold;
+}
+div.reply {
+	border: 1px solid #dadada;
+	margin-bottom: 5px;
+	padding: 5px;
+	cursor: pointer;
+}
+div.reply:hover {
+	background-color: #eee;
+}
+fieldset.frame > form {
+	margin: 10px 0;
+	display: flex;
+	justify-content: space-around;
+	height: 75px;
+}
+fieldset.frame > form > textarea {
+	flex: 8;
+	padding: 5px;
+	box-sizing: border-box;
+	resize: none;
+	margin-right: 10px;
+}
+fieldset.frame > form > input[type="submit"] {
+	flex: 1.5px;
+}
+p > textarea[name="content"] {
+	width: 500px;
+	height: 200px;
+	padding: 10px;
+	box-sizing: border-box;
+	resize: none;
+}
+header, nav, main {
+	max-width: 1200px;
+	margin: auto;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+main > fieldset {
+	min-width: 800px;
+}
